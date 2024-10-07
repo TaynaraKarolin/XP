@@ -3,10 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Loja de Celulares</title>
+    <title>XpNet</title>
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap'); /* Fonte estilizada */
+
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Poppins', sans-serif;
             margin: 0;
             padding: 0;
             background-color: #1a1a1a; /* Preto */
@@ -16,16 +18,28 @@
         .header {
             background-color: #00264d; /* Azul escuro */
             padding: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .logo {
+            width: 100px; /* Ajuste o tamanho conforme necessário */
+        }
+
+        .header-text {
             text-align: center;
+            flex-grow: 1;
             color: white;
         }
 
-        .header h1 {
+        .header-text h1 {
             margin: 0;
             font-size: 36px;
+            font-weight: 600;
         }
 
-        .header p {
+        .header-text p {
             font-size: 18px;
             margin-top: 10px;
         }
@@ -37,6 +51,7 @@
 
         .content h2 {
             color: #0099ff; /* Azul claro */
+            font-weight: 600;
         }
 
         .content p {
@@ -59,19 +74,134 @@
         .button:hover {
             background-color: #007acc; /* Azul mais escuro */
         }
+
+        .iphone-section {
+            padding: 40px 20px;
+            background-color: #00264d; /* Azul escuro */
+        }
+
+        .iphone-section h2 {
+            color: #0099ff;
+            text-align: center;
+            margin-bottom: 20px;
+            font-weight: 600;
+        }
+
+        .iphone-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .iphone-item {
+            background-color: #1a1a1a; /* Preto */
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            color: white;
+        }
+
+        .iphone-item img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        .iphone-item h3 {
+            margin: 15px 0 10px 0;
+            font-size: 20px;
+            color: #0099ff;
+        }
+
+        .iphone-item p {
+            font-size: 18px;
+            color: #cccccc;
+        }
     </style>
 </head>
 <body>
 
     <div class="header">
-        <h1>Loja de Celulares</h1>
-        <p>Conecte-se ao futuro com os melhores celulares do mercado!</p>
+        <img src="logo.png" alt="Logo da Loja" class="logo">
+        <div class="header-text">
+            <h1>Loja de Celulares</h1>
+            <p>Conecte-se ao futuro com os melhores celulares do mercado!</p>
+        </div>
     </div>
 
     <div class="content">
         <h2>Confira nossas ofertas exclusivas!</h2>
         <p>Encontre o smartphone ideal para você com as melhores condições de pagamento.</p>
         <a href="#" class="button">Ver Produtos</a>
+    </div>
+
+    <!-- Seção de iPhones -->
+    <div class="iphone-section">
+        <h2>iPhones em Destaque</h2>
+        <div class="iphone-grid">
+            <!-- Modelo 1 -->
+            <div class="iphone-item">
+                <img src="iphone1.jpg" alt="iPhone 1">
+                <h3>iPhone 12</h3>
+                <p>R$ 5.499,00</p>
+            </div>
+            <!-- Modelo 2 -->
+            <div class="iphone-item">
+                <img src="iphone2.jpg" alt="iPhone 2">
+                <h3>iPhone 12 Pro</h3>
+                <p>R$ 7.499,00</p>
+            </div>
+            <!-- Modelo 3 -->
+            <div class="iphone-item">
+                <img src="iphone3.jpg" alt="iPhone 3">
+                <h3>iPhone 11</h3>
+                <p>R$ 4.999,00</p>
+            </div>
+            <!-- Modelo 4 -->
+            <div class="iphone-item">
+                <img src="iphone4.jpg" alt="iPhone 4">
+                <h3>iPhone XR</h3>
+                <p>R$ 3.999,00</p>
+            </div>
+            <!-- Modelo 5 -->
+            <div class="iphone-item">
+                <img src="iphone5.jpg" alt="iPhone 5">
+                <h3>iPhone SE</h3>
+                <p>R$ 3.499,00</p>
+            </div>
+            <!-- Modelo 6 -->
+            <div class="iphone-item">
+                <img src="iphone6.jpg" alt="iPhone 6">
+                <h3>iPhone 13</h3>
+                <p>R$ 6.499,00</p>
+            </div>
+            <!-- Modelo 7 -->
+            <div class="iphone-item">
+                <img src="iphone7.jpg" alt="iPhone 7">
+                <h3>iPhone 13 Pro</h3>
+                <p>R$ 8.999,00</p>
+            </div>
+            <!-- Modelo 8 -->
+            <div class="iphone-item">
+                <img src="iphone8.jpg" alt="iPhone 8">
+                <h3>iPhone 14</h3>
+                <p>R$ 9.499,00</p>
+            </div>
+            <!-- Modelo 9 -->
+            <div class="iphone-item">
+                <img src="iphone9.jpg" alt="iPhone 9">
+                <h3>iPhone 14 Pro</h3>
+                <p>R$ 10.999,00</p>
+            </div>
+            <!-- Modelo 10 -->
+            <div class="iphone-item">
+                <img src="iphone10.jpg" alt="iPhone 10">
+                <h3>iPhone X</h3>
+                <p>R$ 4.299,00</p>
+            </div>
+        </div>
     </div>
 
 </body>
